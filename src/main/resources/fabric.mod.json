@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "trialselector",
+	"version": "${version}",
+	"name": "Trial Selector",
+	"description": "Select desired rewards on Trial Vaults and automatically use keys when they appear!",
+	"authors": [
+		"Les Gamins"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/"
+	},
+	"license": "GPL-3.0",
+	"icon": "assets/trialselector/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.trialselector.TrialSelectorMod"
+		],
+		"client": [
+			"com.trialselector.client.TrialSelectorClient"
+		]
+	},
+	"mixins": [
+		"trialselector.mixins.json",
+		{
+			"config": "trialselector.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

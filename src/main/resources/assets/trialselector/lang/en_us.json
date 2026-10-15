@@ -1,0 +1,6 @@
+{
+  "key.trialselector.open_gui": "Open Trial Selector GUI",
+  "key.trialselector.toggle_auto": "Toggle Auto-Unlock",
+  "key.trialselector.lock_vault": "Lock/Unlock Target Vault",
+  "category.trialselector": "Trial Selector"
+}
